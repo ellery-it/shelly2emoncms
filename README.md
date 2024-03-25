@@ -14,19 +14,25 @@ This Python script will allow to translate MQTT topics posted from Shelly EM to 
     cd shelly2emoncms
     
 # Configuration
-    adjust parameters (mqtt broker and shelly device configuration)
     nano  mqtt_forwarder.py
+    adjust parameters (mqtt broker and shelly device configuration)
     
 # Test
     python3 mqtt_forwarder.py
 
 # Install as service
-    todo
-    see https://gist.github.com/emxsys/a507f3cad928e66f6410e7ac28e2990f
+    mv shelly2emoncms.service /lib/systemd/system/
+    sudo chmod 644 /lib/systemd/system/shelly2emoncms.service
+    chmod +x ~/shelly2emoncms/mqtt_forwarder.py
+    sudo systemctl daemon-reload
+    sudo systemctl enable shelly2emoncms.service
+    sudo systemctl start shelly2emoncms.service
+    
     
 # Uninstall
     cd ~
     rm -rf shelly2emoncms
+    sudo systemctl disable shelly2emoncms.service
 
     
 # Notes / References
@@ -37,4 +43,5 @@ This Python script will allow to translate MQTT topics posted from Shelly EM to 
       - https://kb.shelly.cloud/knowledge-base/shelly-em
       - https://shelly-api-docs.shelly.cloud/gen1/#shelly-em-mqtt
       - https://support.shelly.cloud/en/support/solutions/articles/103000044280-how-can-i-enable-the-mqtt-feature-
+  - install script as service see https://gist.github.com/emxsys/a507f3cad928e66f6410e7ac28e2990f
   - for an alternative approach see also Node-Red https://iot.stackexchange.com/questions/5215/i-need-to-transform-mqtt-topic-is-it-possible
