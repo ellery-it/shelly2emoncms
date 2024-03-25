@@ -38,3 +38,4 @@ This Python script will allow to translate MQTT topics posted from Shelly EM to 
       - https://kb.shelly.cloud/knowledge-base/shelly-em
       - https://shelly-api-docs.shelly.cloud/gen1/#shelly-em-mqtt
       - https://support.shelly.cloud/en/support/solutions/articles/103000044280-how-can-i-enable-the-mqtt-feature-
+  - for an alternative approach see also Node-Red https://iot.stackexchange.com/questions/5215/i-need-to-transform-mqtt-topic-is-it-possible
