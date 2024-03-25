@@ -1,0 +1,11 @@
+[Unit]
+Description=shelly2emoncms MQTT forwarder
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/pi/shelly2emoncms/mqtt_forwarder.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
