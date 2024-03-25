@@ -1,6 +1,6 @@
 # Intro
+Allows the use af a Shelly EM device  (which should be configured to post values on a local MQTT broker instead of cloud) in association to EmonCMS installed on a raspberry without any other hardware (EmonTX, emonBase). 
 This Python script will allow to translate MQTT topics posted from Shelly EM to topics compatible with OpenEnergyMonitor EmonHub/EmonCMS
-Allow the use af a Shelly EM device  (which should be configured to post values on a local MQTT broker instead of cloud) in association to EmonCMS installed on a raspberry without any other hardware (EmonTX, emonBase)
 
 # Prerequisites
   
