@@ -21,9 +21,9 @@ This Python script will allow to translate MQTT topics posted from Shelly EM to 
     python3 mqtt_forwarder.py
 
 # Install as service
-   todo
-   Using systemd: This is a more modern init system used by many Linux distributions. You can create a systemd service file to run your script at startup.
-   Using init.d: This is an older init system still used by some distributions. You can create a script file to be placed in the /etc/init.d directory.
+    todo
+    - Using systemd: This is a more modern init system used by many Linux distributions. You can create a systemd service file to run your script at startup.
+    - Using init.d: This is an older init system still used by some distributions. You can create a script file to be placed in the /etc/init.d directory.
     
 # Uninstall
     cd ~
