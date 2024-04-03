@@ -1,11 +1,16 @@
 [Unit]
 Description=shelly2emoncms MQTT forwarder
-After=multi-user.target
+After=network-online.target
+Wants=network-online.target systemd-networkd-wait-online.service
+
 
 [Service]
 Type=simple
+User=pi
 ExecStart=/usr/bin/python3 /home/pi/shelly2emoncms/mqtt_forwarder.py
-Restart=on-abort
+Restart=on-failure
+RestartSec=5s
+
 
 [Install]
 WantedBy=multi-user.target
