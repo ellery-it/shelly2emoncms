@@ -21,7 +21,7 @@ This Python script will allow to translate MQTT topics posted from Shelly EM to 
     python3 mqtt_forwarder.py
 
 # Install as service
-    mv shelly2emoncms.service /lib/systemd/system/
+    sudo mv shelly2emoncms.service /lib/systemd/system/
     sudo chmod 644 /lib/systemd/system/shelly2emoncms.service
     chmod +x ~/shelly2emoncms/mqtt_forwarder.py
     sudo systemctl daemon-reload
