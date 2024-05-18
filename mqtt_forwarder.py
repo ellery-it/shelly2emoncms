@@ -10,7 +10,7 @@ broker_port = 1883  # Default MQTT port
 broker_user= "emonpi"
 proker_pass="emonpimqtt2016"
 #shelly EM configuration
-shelly_device_name="shellyem-C45BBEE1B43C"
+shelly_device_name="shellyem-123456ABCDEF"
 k_power=1
 
 # Shelly Topic and emonHub Topic
